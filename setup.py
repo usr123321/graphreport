@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-filename = 'graphreport/version.py'
+filename = 'graph-report/version.py'
 exec(compile(open(filename, 'rb').read(), filename, 'exec'))
 
 setup(name='graphreport',
