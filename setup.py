@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-filename = 'graph-report/version.py'
+filename = 'graphreport/version.py'
 exec(compile(open(filename, 'rb').read(), filename, 'exec'))
 
 setup(name='graphreport',
@@ -27,7 +27,7 @@ setup(name='graphreport',
       ],
       entry_points={
           'console_scripts': [
-              'graphreport=graph-report.runner:main',
+              'graphreport=graphreport.runner:main',
           ]
       },
       )
