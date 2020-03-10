@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-filename = 'robotframework_metrics/version.py'
+filename = 'graphreport/version.py'
 exec(compile(open(filename, 'rb').read(), filename, 'exec'))
 
-setup(name='robotframework-metrics',
+setup(name='graphreport',
       version=__version__,
       description='Custom metrics based report for robot framework',
       long_description='Dashboard view of robotframework results created by parsing output.xml using robot.result api',
@@ -12,7 +12,7 @@ setup(name='robotframework-metrics',
           'Programming Language :: Python',
           'Topic :: Software Development :: Testing',
       ],
-      keywords='robotframework report',
+      keywords='Robot framework graphreport',
       author='user',
       author_email='github.com',
       url='github.com',
@@ -27,7 +27,7 @@ setup(name='robotframework-metrics',
       ],
       entry_points={
           'console_scripts': [
-              'robotmetrics=robotframework_metrics.runner:main',
+              'graphreport=graph-report.runner:main',
           ]
       },
       )
